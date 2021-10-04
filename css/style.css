@@ -1,0 +1,99 @@
+/* UI Guidelines
+This sprint is not a UI-centered project. However, we recommend to try implementing the following UI concepts:
+1. Board is square and cells are squares
+2. Cells keep their size when hovered and when revealed
+3. Board keeps its position (shouldn't move) along all game phases (do not add UI elements dynamically above it)
+4. Mines look like mines.
+5. Add a footer at the bottom of the page with your full name. */
+
+
+h1 {
+    text-align: center;
+}
+
+.board {
+    background-color:gray;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin:auto;  
+}
+
+.choose{
+    font-family:cursive;
+    font-size: 30px;
+
+}
+
+.seconds-counter {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.button {
+    background-image: radial-gradient(farthest-corner at 40px 40px,
+    rgb(243, 241, 241) 0%, rgb(194, 201, 199) 100%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border:2px solid white;
+}
+
+.button:hover {
+    background-color: rgb(187, 180, 180);
+    color: white;
+}
+
+.button1 {
+    
+    margin-left: 3px;
+
+}
+
+.button2 {
+    margin-left: 3px;
+
+}
+
+.button3 {
+    margin-left: 3px;
+
+}
+.choose {
+    color:whitesmoke;
+    text-align: center;
+}
+
+
+.table {
+    background-color: white;
+    margin:auto;
+    margin-top: 50px;
+    font-size: 130px;
+    text-align: center;
+}
+
+
+.td {
+    height: 20px;
+    width: 20px;
+    background-color: #C0C0C0;
+    border: 1.5px solid;
+    border-top-color: #ffffff;
+    border-right-color: #7B7B7B;
+    border-bottom-color: #7B7B7B;
+    border-left-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    font-size:10px;
+}
+
+.selected {
+    background-image: radial-gradient(farthest-corner at 40px 40px,
+    rgb(162, 177, 184) 0%, rgb(223, 222, 235) 100%);
+}
+
+.restart {
+    background-color: white;;
+    margin-top: 5px;
+    margin-left: 114px;
+    border:none;
+    font-size: 12px;
+}
