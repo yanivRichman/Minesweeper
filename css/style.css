@@ -6,21 +6,28 @@ This sprint is not a UI-centered project. However, we recommend to try implement
 4. Mines look like mines.
 5. Add a footer at the bottom of the page with your full name. */
 
+.time {
+    color: red;
+    background-color: black;;
+    margin-left: 260px;
+    font-size: 20px;
+}
+
 
 h1 {
     text-align: center;
 }
 
 .board {
-    background-color:gray;
+    background-color:lightslategrey;
     width: 300px;
-    height: 300px;
+    height: 350px;
     padding: 20px;
     margin:auto;  
 }
 
 .choose{
-    font-family:cursive;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
 
 }
@@ -43,17 +50,17 @@ h1 {
 
 .button1 {
     
-    margin-left: 3px;
+    margin-left: 30px;
 
 }
 
 .button2 {
-    margin-left: 3px;
+    margin-left: 10px;
 
 }
 
 .button3 {
-    margin-left: 3px;
+    margin-left: 10px;
 
 }
 .choose {
@@ -65,7 +72,7 @@ h1 {
 .table {
     background-color: white;
     margin:auto;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 130px;
     text-align: center;
 }
@@ -92,7 +99,7 @@ h1 {
 
 .restart {
     background-color: white;;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 114px;
     border:none;
     font-size: 12px;

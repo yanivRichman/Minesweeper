@@ -11,13 +11,14 @@
 
 <body onload="initGame()">
     <div class="board">
-        <div class="seconds-counter">Game Time: <span class="time">0</span> seconds</div>
+        <div class="seconds-counter"><span class="time">0</span></div>
         <h2 class="choose"> Choose Level</h2>
-        <button class= "button button1" onclick="setLevel(16)">Easy (16)</button>
-        <button class= "button button2" onclick="setLevel(25)">Hard (25)</button>
-        <button class= "button button3" onclick="setLevel(36)">Extreme! (36)</button>
-        <table border="1" class="table"></table>
+        <button class="button button1" onclick="setLevel(16)">Beginner</button>
+        <button class="button button2" onclick="setLevel(25)">Medium</button>
+        <button class="button button3" onclick="setLevel(36)">Expert!</button>
+        <table border="1" class="table" id="button" oncontextmenu="event.preventDefault();"></table>
         <button class="restart" onclick="init()">New Game</button>
+        <p id="log"></p>
 
     </div>
     <script src="js/main.js"></script>
