@@ -1,4 +1,4 @@
-/* UI Guidelines
+/* UI Guidelines ----------- To Do ----------------------
 This sprint is not a UI-centered project. However, we recommend to try implementing the following UI concepts:
 1. Board is square and cells are squares
 2. Cells keep their size when hovered and when revealed
@@ -6,13 +6,45 @@ This sprint is not a UI-centered project. However, we recommend to try implement
 4. Mines look like mines.
 5. Add a footer at the bottom of the page with your full name. */
 
-.time {
+.sec-count {
     color: red;
     background-color: black;;
-    margin-left: 260px;
-    font-size: 20px;
+    margin-left: 10px;
+    font-size: 15px;
 }
 
+.smiley {  
+    margin-left: 300px;
+    font-size: 15px;
+}
+
+.flag-count {
+    color: red;
+    background-color: black;;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.hearts {  
+    margin-left: 280px;
+    font-size: 15px;
+}
+
+.loser {
+    text-align: center;
+    display:none;
+    font-size: 30px;
+    margin-top: 5px;
+    color:rgba(255, 0, 0, 1);
+}
+
+.winner {
+    text-align: center;
+    display:none;
+    font-size: 30px;
+    margin-top: 5px;
+    color: green;
+}
 
 h1 {
     text-align: center;
@@ -20,8 +52,8 @@ h1 {
 
 .board {
     background-color:lightslategrey;
-    width: 300px;
-    height: 350px;
+    width: 400px;
+    height: 670px;
     padding: 20px;
     margin:auto;  
 }
@@ -32,8 +64,20 @@ h1 {
 
 }
 
+.flags-counter {
+    font-family:'Courier New', Courier, monospace;
+    margin-right: 70px;
+}
+
+
 .seconds-counter {
     font-family:'Courier New', Courier, monospace;
+    margin-left: 40px;
+}
+
+.flags-counter {
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 40px;
 }
 
 .button {
@@ -50,7 +94,7 @@ h1 {
 
 .button1 {
     
-    margin-left: 30px;
+    margin-left: 70px;
 
 }
 
@@ -89,7 +133,9 @@ h1 {
     border-left-color: #ffffff;
     text-align: center;
     vertical-align: middle;
-    font-size:10px;
+    font-size:14px;
+    font-weight:bold;
+
 }
 
 .selected {
@@ -100,7 +146,7 @@ h1 {
 .restart {
     background-color: white;;
     margin-top: 15px;
-    margin-left: 114px;
+    margin-left: 165px;
     border:none;
     font-size: 12px;
 }

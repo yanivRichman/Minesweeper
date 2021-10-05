@@ -15,16 +15,20 @@ function createMat(ROWS, COLS) {
 
 function countMineNeighbors(cellI, cellJ, mat) {
     var neighborsCount = 0;
+    gNeighborsArr = [];
     for (var i = cellI - 1; i <= cellI + 1; i++) {
         if (i < 0 || i >= mat.length) continue;
         for (var j = cellJ - 1; j <= cellJ + 1; j++) {
             if (i === cellI && j === cellJ) continue;
             if (j < 0 || j >= mat[i].length) continue;
+            gNeighborsArr.push([i, j]);
             if (mat[i][j].isMine) neighborsCount++;
         }
     }
+    // console.log(gNeighborsArr);
     return neighborsCount;
 }
+
 
 function getEmptyCells(board) {
     var emptyCells = []
@@ -42,3 +46,33 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+
+function incrementSeconds() {
+    var elTime = document.querySelector('.sec-count');
+    gSeconds++;
+    elTime.innerText = gSeconds;
+}
+
+
+function resetTimer() {
+    var elTime = document.querySelector('.sec-count');
+    gSeconds = 0
+    elTime.innerText = gSeconds;
+}
+
+function resetFlags() {
+    var elFlag = document.querySelector('.flag-count');
+    gFlags = 0
+    elFlag.innerText = gFlags;
+}
+
+
+// location such as: {i: 2, j: 7}
+function renderCell(location, value) {
+    // Select the elCell and set the value
+    var elCell = document.querySelector('.td');
+    console.log(elCell);
+    console.log(location);
+    console.log(value);
+    // elCell.innerHTML = value;
+}
