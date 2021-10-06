@@ -200,6 +200,11 @@ function cellClicked(elCell, i, j) {
             gameLoss(elCell, i, j);
         }
     }
+    if (gCellClickCount === 1) {
+        console.log('here once')
+        setMines();
+        setMinesNegsCount(gBoard);
+    }
     checkGameOver();
 }
 
@@ -208,7 +213,7 @@ function cellClicked(elCell, i, j) {
 // Called on right click to mark a cell (suspected to be a mine) 
 // Search the web (and implement) how to hide the context menu on right click
 function cellMarked(elCell) {
-
+    console.log(elCell);
     var cellId = elCell.id;
     var myArr = cellId.split('-');
     var i = +myArr[1]
@@ -261,6 +266,7 @@ function cellRightClicked(e) {
 }
 
 
+
 function startGame() {
     gGame.isOn = true;
     startTime();
@@ -284,7 +290,7 @@ function setMinesNegsCount(board) {
             if (cellMineNeighborsNum > 0) board[i][j].minesAroundCount = cellMineNeighborsNum;
         }
     }
-    console.log(board);
+    // console.log(board);
 }
 
 
@@ -368,10 +374,6 @@ function setMines() {
 
 // Game ends when all mines are marked, and all the other cells are shown
 function checkGameOver() {
-    if (gGame.shownCount === 1) {
-        setMines();
-        setMinesNegsCount(gBoard);
-    }
     if (gGame.shownCount + gGame.markedCount === gLevel.SIZE * gLevel.SIZE) {
         clearInterval(gSecIntreval);
         var elWinnerMsg = document.querySelector('.winner')
